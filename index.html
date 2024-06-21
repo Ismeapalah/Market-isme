@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Toko Online Kami</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#cart">Keranjang</a></li>
+                <li><a href="#payment">Pembayaran</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Produk Kami</h2>
+            <div class="product" data-price="100000">
+                <img src="images/apalah.jpg" alt="Produk 1">
+                <h3>Produk 1</h3>
+                <p>Harga: Rp 100.000</p>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+            <div class="product" data-price="200000">
+                <img src="images/ayano.jpg" alt="Produk 2">
+                <h3>Produk 2</h3>
+                <p>Harga: Rp 200.000</p>
+                <button class="add-to-cart">Tambah ke Keranjang</button>
+            </div>
+            <!-- Tambahkan produk lain di sini -->
+        </section>
+        <section id="cart">
+            <h2>Keranjang Belanja</h2>
+            <ul id="cart-items">
+                <!-- Item keranjang akan ditambahkan di sini -->
+            </ul>
+            <p>Total: Rp <span id="total-price">0</span></p>
+            <button id="buy-button">Beli</button>
+        </section>
+        <section id="payment" style="display:none;">
+            <h2>Metode Pembayaran</h2>
+            <form id="payment-form">
+                <label>
+                    <input type="radio" name="payment-method" value="transfer" required> Transfer Bank
+                </label><br>
+                <label>
+                    <input type="radio" name="payment-method" value="credit" required> Kartu Kredit
+                </label><br>
+                <label>
+                    <input type="radio" name="payment-method" value="ewallet" required> E-Wallet
+                </label><br>
+                <button type="submit">Bayar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Toko Online. Semua Hak Cipta Dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
